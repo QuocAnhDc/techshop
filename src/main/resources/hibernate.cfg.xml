@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+  "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.url">jdbc:postgresql://ec2-54-145-102-149.compute-1.amazonaws.com:5432/d4l3imc6g5iafu</property>
+    <property name="connection.username">yolhtyqpwbeisc</property>
+    <property name="connection.password">5899aee75cbcf1ffdf8f252fb8d097093cdac07b5aa6a0e2c9f505f06dcf4dd6</property>
+    <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+    <property name="hbm2ddl.auto">update</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <mapping class="com.example.techshop.entity.UserEntity"/>
+    <mapping class="com.example.techshop.entity.ShoppingSessionEntity"/>
+    <mapping class="com.example.techshop.entity.RoleEntity"/>
+    <mapping class="com.example.techshop.entity.ProductEntity"/>
+    <mapping class="com.example.techshop.entity.CategoryEntity"/>
+    <mapping class="com.example.techshop.entity.BrandEntity"/>
+    <mapping class="com.example.techshop.entity.OrderItemEntity"/>
+    <mapping class="com.example.techshop.entity.OrderDetailEntity"/>
+    <mapping class="com.example.techshop.entity.CartItemEntity"/>
+  </session-factory>
+</hibernate-configuration>
